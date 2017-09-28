@@ -39,13 +39,14 @@
 
 #intro dl dt {
 	font-size: 32px;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
 
 #intro dl dd {
 	font-size: 16px;
-	line-height: 1.75;
+	line-height: 1.5;
 	margin-bottom: 56px;
+	color: rgba(67, 69, 82, 0.7);
 }
 
 #cases {
