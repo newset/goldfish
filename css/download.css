@@ -58,6 +58,7 @@
 	width: 168px;
 	text-align: left;
 	white-space: nowrap;
+	padding: 12px 20px;
 }
 
 #download .addition-text .jy-btn.ios {
@@ -82,7 +83,7 @@
 	display: inline-block;
 	vertical-align: middle;
 	height: 28px;
-	width: 28px;
+	width: 24px;
 	background: url(../img/assets/ico_pingguo.png) center center no-repeat;
 	margin-right: 8px;
 }
