@@ -1,0 +1,671 @@
+/*!
+*   goldfish-www v0.1.0
+*   
+*   Copyright (c) initialyear-atualyear yue ()
+*   Released under the MIT license
+*/
+
+.container,
+.clearfix {
+	zoom: 1;
+}
+
+.container:after,
+.container:before,
+.clearfix:after,
+.clearfix:before {
+	content: "";
+	display: table;
+}
+
+.container:after,
+.clearfix:after {
+	clear: both;
+}
+
+/*! ==================================================================
+   Main Styles
+   ================================================================== */
+
+a {
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+p {
+	margin: 0;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1160px;
+	margin: auto;
+	position: relative;
+	clear: both;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.jy-btn {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1;
+	padding: 10px 20px;
+	border: 1px solid #434552;
+	border-radius: 18px;
+	text-align: center;
+	text-decoration: none;
+	color: #434552;
+}
+
+.jy-btn:hover,
+.jy-btn:focus {
+	color: #ff6d0d;
+	border-color: #ff6d0d;
+}
+
+.jy-btn.jy-btn-white {
+	color: #fff;
+	border-color: #fff;
+}
+
+.jy-btn.jy-btn-success {
+	color: #fff;
+	background-color: #57c23e;
+	border: none;
+}
+
+.jy-btn.jy-btn-success:hover,
+.jy-btn.jy-btn-success:focus {
+	background-color: #47ad2f;
+}
+
+.jy-btn.jy-btn-gray {
+	color: #fff;
+	background-color: #ccc;
+	border: none;
+}
+
+.jy-btn.jy-btn-gray:hover,
+.jy-btn.jy-btn-gray:focus {
+	background-color: #b2b1b1;
+}
+
+.jy-btn.jy-btn-primary {
+	color: #fff;
+	background-color: #ff6d0d;
+	border: none;
+}
+
+.jy-btn.jy-btn-primary:hover,
+.jy-btn.jy-btn-primary:focus {
+	background-color: #e66008;
+}
+
+.slide {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.slick-dotted.slick-slider {
+	margin-bottom: 0 !important;
+}
+
+.slick-slide:focus {
+	outline: none;
+}
+
+.slick-slider .slick-dots {
+	position: absolute;
+	bottom: 10px;
+}
+
+.slick-slider .slick-dots li {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.2);
+	margin: 0 4px;
+}
+
+.slick-slider .slick-dots li.slick-active {
+	background: #fff;
+}
+
+.slick-slider .slick-dots li button {
+	display: none;
+}
+
+.banner {
+	overflow: hidden;
+	font-size: 0;
+	position: relative;
+	margin-bottom: 0 !important;
+}
+
+.modal-wrap {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
+.modal-wrap .backdrop {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	opacity: 0.3;
+	z-index: 100;
+}
+
+.modal-wrap .modal {
+	width: 600px;
+	position: absolute;
+	z-index: 101;
+	background: #fff;
+	left: 50%;
+	margin-left: -300px;
+	margin-top: 200px;
+	box-shadow: 0px 6px 12px 0 rgba(0, 0, 0, 0.25);
+}
+
+.modal-wrap .modal > div {
+	padding: 28px;
+}
+
+.modal-wrap .modal .modal-header {
+	font-size: 20px;
+}
+
+.modal-wrap .modal .modal-header .close {
+	float: right;
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	background: url(../img/assets/but_guanbi_nor.png) center center no-repeat;
+}
+
+.modal-wrap .modal .modal-header .close:hover,
+.modal-wrap .modal .modal-header .close:focus {
+	background-image: url(../img/assets/but_guanbi_sel.png);
+}
+
+.modal-wrap .modal .modal-body {
+	padding-top: 5px;
+	font-size: 14px;
+}
+
+.modal-wrap .modal .modal-body .feedback-content {
+	margin: 13px 0;
+}
+
+.modal-wrap .modal .modal-body .feedback-content textarea {
+	width: 100%;
+	height: 128px;
+	border: none;
+	background: #f7f7f7;
+	resize: none;
+	padding: 13px 17px;
+}
+
+.modal-wrap .modal .modal-body .feedback-contact {
+	margin-bottom: 17px;
+}
+
+.modal-wrap .modal .modal-body .feedback-contact input {
+	width: 100%;
+	border: none;
+	background: #f7f7f7;
+	padding: 13px 17px;
+}
+
+.modal-wrap .modal .modal-body .tips {
+	margin-bottom: 20px;
+	color: #ff6d0d;
+	font-weight: normal;
+	visibility: hidden;
+}
+
+.modal-wrap .modal .modal-body .tips.show {
+	visibility: visible;
+}
+
+.modal-wrap .modal .modal-body .tips .icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/assets/img_tishi-.png) center center no-repeat;
+	margin-right: 5px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+
+.modal-wrap .modal .modal-body .jy-btn {
+	width: 128px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+body {
+	font: normal normal 14px/1.15 "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei", arial, "宋体", "Helvetica Neue", "Helvetica", "STHeiTi", sans-serif;
+	background-color: #FFF;
+	color: #434552;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-smoothing: auto;
+	-webkit-font-feature-settings: "liga", "kern";
+	-moz-font-feature-settings: "liga", "kern";
+	font-feature-settings: "liga", "kern";
+	padding-top: 68px;
+}
+
+/**
+*
+* Better Font Smoothing in Chrome & Safari
+* http://www.intridea.com/blog/2014/5/8/better-font-smoothing-in-chrome-on-mac-os-x
+*
+**/
+
+footer {
+	position: relative;
+	height: 240px;
+	padding: 40px 28px;
+}
+
+footer p {
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+footer .container > div {
+	display: inline-block;
+}
+
+footer .partners {
+	font-size: 0;
+	width: 280px;
+}
+
+footer .partners .title {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+footer .partners li {
+	display: inline-block;
+	font-size: 12px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	color: #999;
+}
+
+footer .nav {
+	margin-left: 95px;
+	border-right: 1px solid #ebebeb;
+	padding-right: 20px;
+}
+
+footer .nav p {
+	margin-top: 10px;
+}
+
+footer .nav p:first-child {
+	margin-top: 0;
+}
+
+footer .nav p a {
+	color: #434552;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+footer .nav p a:hover,
+footer .nav p a:focus {
+	color: #ff6d0d;
+}
+
+footer .contact {
+	vertical-align: top;
+	padding-top: 5px;
+	padding-left: 20px;
+}
+
+footer .contact .title {
+	margin-bottom: 15px;
+}
+
+footer .contact .small {
+	font-size: 12px;
+	color: #888;
+}
+
+footer .contact .small a {
+	color: #888;
+	text-decoration: none;
+}
+
+footer .follow-us {
+	float: right;
+}
+
+footer .follow-us .title {
+	margin-bottom: 23px;
+}
+
+footer .follow-us .icon {
+	position: relative;
+	display: inline-block;
+	margin-right: 12px;
+}
+
+footer .follow-us .icon a {
+	text-decoration: none;
+}
+
+footer .follow-us .icon span {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+}
+
+footer .follow-us .icon span.weibo {
+	background: url("../img/assets/ico_-weibo_nor.png") center center no-repeat;
+}
+
+footer .follow-us .icon span.weibo:hover {
+	background-image: url("../img/assets/ico_-weibo_sel.png");
+}
+
+footer .follow-us .icon span.wechat {
+	background: url("../img/assets/ico_weixin_nor.png") center center no-repeat;
+}
+
+footer .follow-us .icon span.wechat:hover {
+	background-image: url("../img/assets/ico_weixin_sel.png");
+}
+
+footer .follow-us .icon .popup {
+	display: none;
+	position: absolute;
+	bottom: 100%;
+	left: -68px;
+	margin-bottom: 10px;
+}
+
+footer .follow-us .icon-wechat:hover .popup {
+	display: block;
+}
+
+footer .copyright {
+	font-size: 12px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 20px 0 28px;
+	border-top: 1px solid #ebebeb;
+}
+
+footer .copyright .arrow {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/assets/img_sanjiao.png) center center no-repeat;
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 30px;
+}
+
+html {
+	font-size: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+html.freez {
+	height: 100%;
+	overflow: hidden;
+}
+
+::-moz-selection {
+	background: #ff6d0d;
+	color: #FFF;
+}
+
+::selection {
+	background: #ff6d0d;
+	color: #FFF;
+}
+
+i[class^="icon-"] {
+	display: block;
+}
+
+nav {
+	height: 68px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 99;
+	background: #fff;
+	box-shadow: 0px 2px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+nav .brand {
+	float: left;
+	height: 44px;
+	margin: 12px 0;
+}
+
+nav ul {
+	float: right;
+	margin: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+nav ul li a {
+	color: #434552;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 22px;
+}
+
+nav ul li a span {
+	font-size: 16px;
+	display: inline-block;
+	line-height: 65px;
+}
+
+nav ul li a.active {
+	color: #ff6d0d;
+	font-weight: bold;
+}
+
+nav ul li a.active span {
+	border-bottom: 3px solid #ff6d0d;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+	color: #ff6d0d;
+}
+
+/*! ==================================================================
+   Media Queries
+   ================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-device-pixel-ratio: 1.25), only screen and (-webkit-min-device-pixel-ratio: 2.0833333333333335), only screen and (min-resolution: 200dpi), only screen and (min-resolution: 1.25dppx) {
+
+body {
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+}
+
+@media print {
+
+/* Reset by Dani Guerrato - www.popupdesign.com.br and H5bp.com */
+
+* {
+	background: transparent !important;
+	color: #000 !important; /* Black prints faster: h5bp.com/s */
+	text-shadow: none !important;
+	-webkit-filter: none !important;
+	filter: none !important;
+	-ms-filter: none !important;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.4em;
+	font: 12pt Georgia, "Times New Roman", Times, serif;
+	color: #000;
+}
+
+.wrap {
+	width: 100%;
+	margin: 0;
+	float: none !important;
+}
+
+.no-print,
+nav,
+footer,
+video,
+audio,
+object,
+embed {
+	display: none;
+}
+
+.print {
+	display: block;
+}
+
+.page-break {
+	page-break-before: always;
+}
+
+a,
+a:visited {
+	text-decoration: underline;
+}
+
+a:link:after,
+a:visited:after {
+	content: " (" attr(href) ") ";
+}
+
+p a {
+	word-wrap: break-word;
+}
+
+q:after {
+	content: " (" attr(cite) ")";
+}
+
+/*
+ * Don't show links that are fragment identifiers,
+ * or use the `javascript:` pseudo protocol
+ */
+
+a:after,
+a[href^="javascript:"]:after,
+a[href^="#"]:after {
+	content: "";
+}
+
+a[href]:after {
+	content: " (" attr(href) ")";
+}
+
+abbr[title]:after {
+	content: " (" attr(title) ")";
+}
+
+aside {
+	display: block;
+	page-break-before: always;
+}
+
+h1 {
+	font-size: 24pt;
+}
+
+h2 {
+	font-size: 18pt;
+	orphans: 3;
+	widows: 3;
+	page-break-after: avoid;
+}
+
+h3 {
+	font-size: 14pt;
+	orphans: 3;
+	widows: 3;
+	page-break-after: avoid;
+}
+
+img {
+	max-width: 100% !important;
+}
+
+p {
+	font-size: 12pt;
+	widows: 3;
+	orphans: 3;
+}
+
+pre,
+blockquote {
+	border: 1px solid #999;
+	page-break-inside: avoid;
+}
+
+thead {
+	display: table-header-group; /* h5bp.com/t */
+}
+
+tr,
+img {
+	page-break-inside: avoid;
+}
+
+}
+

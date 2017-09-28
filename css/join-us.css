@@ -1,0 +1,167 @@
+/*!
+*   goldfish-www v0.1.0
+*   
+*   Copyright (c) initialyear-atualyear yue ()
+*   Released under the MIT license
+*/
+
+#join-us .slide {
+	height: 600px;
+}
+
+#intro {
+	padding: 60px 0;
+}
+
+#intro h2 {
+	font-size: 32px;
+	text-align: center;
+	font-weight: normal;
+}
+
+#intro h4 {
+	font-size: 18px;
+	text-align: center;
+	font-weight: normal;
+}
+
+#intro p {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 36px;
+}
+
+#intro ul {
+	padding-left: 25px;
+}
+
+#intro ul li {
+	margin-bottom: 16px;
+}
+
+#photos h2 {
+	text-align: center;
+	font-size: 32px;
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 14px;
+}
+
+#photos h3 {
+	font-size: 20px;
+	margin-bottom: 30px;
+	font-weight: normal;
+	color: #fff;
+	text-align: center;
+}
+
+#photos .photo-wall {
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: 14px;
+}
+
+#photos .photo-wall img {
+	background-color: #eee;
+	float: left;
+	margin: 10px;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: -webkit-transform 0.3s ease 0s;
+	transition: -webkit-transform 0.3s ease 0s;
+	transition: transform 0.3s ease 0s;
+	transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+#photos .photo-wall img:hover {
+	-webkit-transform: scale(1.03);
+	-ms-transform: scale(1.03);
+	transform: scale(1.03);
+}
+
+#photos .photo-wall img.col-1 {
+	width: 275px;
+}
+
+#photos .photo-wall img.col-2 {
+	width: 570px;
+}
+
+#photos .photo-wall img.row-1 {
+	height: 210px;
+}
+
+#photos .photo-wall img.row-2 {
+	height: 440px;
+}
+
+#jds {
+	padding: 63px 0 76px 0;
+	border-bottom: 1px solid #ebebeb;
+	text-align: center;
+}
+
+#jds h2 {
+	font-size: 32px;
+	font-weight: normal;
+}
+
+#jds h3 {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#jds .jd {
+	float: left;
+	font-size: 12px;
+	width: 455px;
+}
+
+#jds .jd.jd-2 {
+	float: right;
+}
+
+#jds .jd:first-child {
+	margin-left: 0;
+}
+
+#jds .jd .jn {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#jds .jd dl {
+	margin-bottom: 20px;
+}
+
+#jds .jd dl dt {
+	font-size: 14px;
+	color: #ff6d0d;
+	margin-bottom: 10px;
+}
+
+#jds .jd dl dd {
+	line-height: 24px;
+	margin-left: 0;
+}
+
+#jds .tips {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+}
+
+#jds .tips a {
+	color: #434552;
+	text-decoration: none;
+}
+
+#jds .tips a:hover {
+	color: #ff6d0d;
+}
+
+.clear {
+	clear: both;
+}
+

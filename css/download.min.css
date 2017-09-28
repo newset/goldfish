@@ -1,0 +1,7 @@
+/*!
+*   goldfish-www v0.1.0
+*   
+*   Copyright (c) initialyear-atualyear yue ()
+*   Released under the MIT license
+*/
+.slide{height:700px}.left-pic{float:left;width:580px;text-align:center}#download .addition-text{float:left;margin-left:10px;margin-top:130px}#download .addition-text .logo{margin-left:-6px}#download .addition-text p{font-size:20px;color:#fff}#download .addition-text .jy-btn{margin-top:25px;border:none;color:#fff;font-weight:700;border-radius:25px;display:inline-block;margin-right:20px;width:168px;text-align:left;white-space:nowrap}#download .addition-text .jy-btn.ios{background-color:#383838}#download .addition-text .jy-btn.ios:focus,#download .addition-text .jy-btn.ios:hover{background-color:#272727}#download .addition-text .jy-btn.android{background-color:#57c23e}#download .addition-text .jy-btn.android:focus,#download .addition-text .jy-btn.android:hover{background-color:#48aa31}#download .addition-text .icon{display:inline-block;vertical-align:middle;height:28px;width:28px;background:url(../img/assets/ico_pingguo.png) center center no-repeat;margin-right:8px}#download .addition-text .icon.android{background-image:url(../img/assets/ico_anzhuo.png)}#download .addition-text .text{display:inline-block;line-height:28px;vertical-align:middle;position:relative;top:2px}#download .addition-text .scan-code{margin-top:34px}
